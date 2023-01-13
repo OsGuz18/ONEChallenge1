@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../Public/css/style.css">
-    <title>Challenge 1 ONE Alura</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../Public/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="../../Public/js/script.js"></script>
+        <title>Challenge 1 ONE Alura</title>
+    </head>
+    <body>
+        <div class="general">
+            <div class="header">
+                <img src="../../Public/images/Logo_Alura.png" alt="logo" id="logo">
+                <h1 class="titulo">Challenge 1 :Decodificador</h1>
+            </div>
+            <div class="cont_result">
+                <img src="../../Public/images/Muñeco.png" alt="Imagen" id="img">
+                <div>
+                    <h2 id="txt1">Ningún mensaje fue encontrado</h2>
+                    <h4 id="txt2">Ingrese el texto que desees encriptar o desencriptar.</h4>
+                    <button id="copiar" onclick="copiar_txt()">Copiar</button>
+                    <textarea name="text_result" id="text_result" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div>
+                <textarea class="texto" id="texto" type="text" placeholder="Ingrese el texto aquí" onKeyUp="this.value=this.value.toLowerCase();"></textarea>
+            </div>
+            
+            
+        </div>
+        <p class="parrafo">&#9830;Sólo minúsculas y sin acentos</p>
+        <button type="button" id="encriptar" class="btn_e" onclick="encriptar()">Encriptar</button>
+        <button type="button" id="btn-desencriptar" class="btn_d" onclick="desencriptar()">Desencriptar</button>
+        
+    </body>
 </html>
